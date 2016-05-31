@@ -49,8 +49,8 @@
 	var riot = __webpack_require__(1);
 	__webpack_require__(3);
 
-	document.addEventListener('DOMDocumentLoaded', function () {
-	  riot.mount('sample-output');
+	document.addEventListener('DOMContentLoaded', function () {
+	  return riot.mount('*');
 	});
 
 /***/ },
@@ -2714,7 +2714,7 @@
 
 	/* WEBPACK VAR INJECTION */(function(riot) {'use strict';
 
-	riot.tag2('sample-output', '<h1>Hello from RiotJS</h1>', '', '', function (opts) {
+	riot.tag2('sample-output', '<h1>Hello from RiotJS</h1>', 'h1 { color: blue; }', '', function (opts) {
 	    console.log('hello from the console.');
 	});
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
